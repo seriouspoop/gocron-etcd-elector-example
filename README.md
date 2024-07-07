@@ -1,6 +1,7 @@
-# gocron-etcd-elector-example
+# gocronv2-etcd-elector-example
 
-A production environment replica of multiple instance job scheduling with leader and follower nodes
+A production environment replica of multiple instance job scheduling with leader and follower nodes,
+this example uses `gocronv2` with `gocron-etcd-elector` with etcd cluster.
 
 # Usage
 
