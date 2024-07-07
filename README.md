@@ -5,7 +5,7 @@ A production environment replica of multiple instance job scheduling with leader
 # Usage
 
 Clone this repo
-`git clone https://github.com/seriouspoop/gocron-etcd-elector-example.git`
+```git clone https://github.com/seriouspoop/gocron-etcd-elector-example.git```
 
 Build and run containers with
 `docker compose up --attach go-app`
