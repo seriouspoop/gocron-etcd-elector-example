@@ -34,7 +34,8 @@ go-app-2| go-app
 go-app-3| go-app
 ```
 
-The etcd elector will choose a leader and run scheduled jobs
+The etcd elector will choose a leader and run scheduled jobs,
+
 Only a leader is allowed to run jobs
 
 ```
@@ -42,8 +43,9 @@ go-app-[leader: any of 1/2/3]| Current instance is leader
 go-app-[leader: any of 1/2/3]| executing job
 ```
 
-Congratulations, you have your multiple instance gocron jon schedulers with high availibility up and running
+Congratulations, you have your multiple instance gocron job schedulers with high availibility up and running
 
+# Testing
 To test the fail over stop the container elected as leader
 
 ```
