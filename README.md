@@ -5,15 +5,25 @@ A production environment replica of multiple instance job scheduling with leader
 # Usage
 
 Clone this repo
-`git clone https://github.com/seriouspoop/gocron-etcd-elector-example.git`
+
+```
+git clone https://github.com/seriouspoop/gocron-etcd-elector-example.git
+```
 
 Build and run containers with
-`docker compose up --attach go-app`
+
+```
+docker compose up --attach go-app
+```
+
 attach flag will only show logs for go-app service
 
 Alternatively
-`docker compose up -d`
-`docker compose logs -f go-app`
+
+```
+docker compose up -d
+docker compose logs -f go-app
+```
 
 You will see something like this on your console
 
@@ -34,7 +44,11 @@ go-app-[leader: any of 1/2/3]| executing job
 Congratulations, you have your multiple instance gocron jon schedulers with high availibility up and running
 
 To test the fail over stop the container elected as leader
-`docker stop gocron-etcd-elector-example-go-app-[leader]`
+
+```
+docker stop gocron-etcd-elector-example-go-app-[leader]
+```
+
 replace `[leader]` with the leader container number,
 
 Example,
